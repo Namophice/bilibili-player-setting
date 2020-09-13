@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 2,
+    "name": "BilibiliPlayerSetting",
+    "version": "1.0",
+  
+    "description": "Bilibili player setting",
+  
+    "icons": {
+      "48": "icons/bilibili_logo.ico"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.bilibili.com/*"],
+        "js": ["borderify.js"]
+      }
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "namophice@foxmail.com"
+        }
+    }
+  
+  }
